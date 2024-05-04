@@ -18,6 +18,13 @@ export const deleteTask = taskId => {
   };
 };
 
+export const toggleCompleted = taskId => {
+  return {
+    type: 'tasks/toggleCompleted',
+    payload: taskId,
+  };
+};
+
 export const setStatusFilter = value => {
   return {
     type: 'filters/setStatusFilter',
